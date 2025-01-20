@@ -2,9 +2,9 @@
 
     int main() {
 
-        int codigoCidade;
+        char codigoCidade[30];
         char nome[50];
-        float populacao;
+        int populacao;
         float area;
         float pib;
         int numPontosTuristicos;
@@ -12,11 +12,11 @@
         /// Variáveis declaradas!
 
         printf("Insira o código da cidade: \n");
-        scanf("%i", &codigoCidade);
+        scanf("%s", &codigoCidade);
         printf("Insira o nome da cidade: \n");
         scanf("%s", nome);
         printf("Insira a populacao da cidade: \n");
-        scanf("%f", &populacao);
+        scanf("%i", &populacao);
         printf("Insira a área da cidade: \n");
         scanf("%f", &area);
         printf("Insira o PIB da cidade: \n");
@@ -25,17 +25,16 @@
         scanf("%i", &numPontosTuristicos);
         printf("\n");
         printf("Você criou uma cidade! ");
-
         /// Criação da cidade.
 
         printf("\n");
         printf("Informações: \n");
-        printf("\n");
-        printf("Código cidade: %i \n", codigoCidade);
-        printf("Nome da cidade: %s \n", nome);
-        printf("Populacao da cidade: %.2f \n", populacao);
-        printf("Area da cidade: %.2f \n", area);
-        printf("Pib da cidade: %.2f \n", pib);
+        printf("Código da cidade: %s .\n", codigoCidade);
+        printf("Nome da cidade: %s .\n", nome);
+        printf("População da cidade: %.2i habitantes.\n", populacao);
+        printf("Área da cidade: %.2f .\n", area);
+        printf("Pib da cidade: %.2f .\n", pib);
+        printf("Número de pontos turísticos: %i.",numPontosTuristicos);
 
         ///Impressão das informações na tela do usuário.
     
