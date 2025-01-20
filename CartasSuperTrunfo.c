@@ -27,6 +27,17 @@
         printf("Você criou uma cidade! ");
 
         /// Criação da cidade.
+
+        printf("\n");
+        printf("Informações: \n");
+        printf("\n");
+        printf("Código cidade: %i \n", codigoCidade);
+        printf("Nome da cidade: %s \n", nome);
+        printf("Populacao da cidade: %.2f \n", populacao);
+        printf("Area da cidade: %.2f \n", area);
+        printf("Pib da cidade: %.2f \n", pib);
+
+        ///Impressão das informações na tela do usuário.
     
     return 0;
 }
